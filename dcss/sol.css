@@ -1,35 +1,56 @@
 
-{
-	border: 1px solid black;
+*{
+	background-color: pink;
+	box-sizing: border-box;
 }
-
 h1{
-	color: blue;
-	text-align: center;
-	font-size: 28px;
+	font-size: 20px;
+			font-weight: normal;
+			font: normal;
+			color: blue;
 }
 
 h2{
-	color: yellow;
-	font-family: Arial;
-	font-size: 24px;
-	font-style: italic;
-}
-
-h3{
 	color: blue;
-	font-size: 18px;
+	font-style: blue;
+    text-align: center;
 }
+h3{
+	font-size: 20px;
+			font-weight: normal;
+			font: normal;
+			color: red;
 
+}
 h4{
-	color: purple;
-	font-size: 16px;
-	font-family: cursive;
+	font-size: 20px;
+			font-weight: normal;
+			font: normal;
+			color: 9E3ACA;
 }
 
-body{
-	background-color: pink;
-	font-size: 14px;
-	font-family: cursive;
-	color: #000EFF;
+li{
+	color: blue;
+	text-align: left;
+
+}
+#p1{
+	font-size:18px;
+    color: AB66DC;
+    font-weight: normal;
+    font-style: normal;
+}
+
+#p2{
+	font-size:18px;
+    color: green;
+    font-weight: italic;
+    font-style: italic;
+
+    }
+    #p3{
+	font-size:18px;
+    color: AB66DC;
+    font-weight: normal;
+    font-style: normal;
 }
