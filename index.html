@@ -1,59 +1,38 @@
-#EXAMEN4
-<!DOCTYPE html>
+# EXAMENV-SECCION
 
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>INICIO</title>
-	<link rel="stylesheet" type="text/css" href="dcss/sol.css">
+<title>Validar Contraseña</title>
+<script>
+	function comprobarClave(){
+		clave1 = document.f1.clave1.value
+		clave2 = document.f1.clave2.value
+		clave3 = document.f1.clave2.value
+		if (clave1 == "Michael" && clave2 == "Zacarias" && clave3 == "Zacarias" ) {
+			alert("Los Datos Coinciden...\n Bienvenido");
+			var href = "index.html";
+			window.location = href;
+		}else{
+			alert("Las claves son distintas...\n Intentelo de Nuevo");
+			var href = "tres.html";
+			window.location = href;
+		};
+	}
+</script>
 </head>
-<body bgcolor="FFCECB"> </body>
-<div id="menu">
-	<ul>
-	<center><li> <a href="index.html" class="greenlink">
-	INICIO </a>
-	&nbsp;
-	<li><a href="primera.html" class="greenlink">
-	 INFORMACION </a>
-	 &nbsp;
-		<li><a href="contacto.html" class="greenlink">
-		TIENDA </a>
-		&nbsp;
-		<li><a href="pro.html" class="greenlink">
-		CONTACTO</a>
-		&nbsp;</center>	
-</ul>
-</div>
+<body bgcolor="#FFD7B4">
+	<h1><marquee style="color:red ;background:yellow">Validar Contraseña</marquee></h1>
+	<br>
+		Escribe el usuario y la contraseña y vuelve a reingresar la contraseña, una en cada campo, y pulsa el botón. Javascript te dirá si las dos son iguales.
 
-	<hr></hr>
-	<body>
-		<h1>EXAMEN BIMESTRE 4</h1>
-		<h2><center>EL DUENDE</center></h2>
-			<p>
-				<h4>¿QUIENES SOMOS?</h4>
-				
-<p id="p1"> 
-Quiénes Somos
-La mas grande selección Online de Tecnología de Entretenimiento, Juguetes, Libros y Artículos de Belleza en Guatemala.<br>
-
-El Duende es la tienda de tecnología más completa de Guatemala donde encontrarás los videojuegos más recientes, los últimos lanzamientos musicales, además de los gadgets de tendencia así como artículos y accesorios que complementan tu vida geek.<br>
-
-El Duende es una cadena de tiendas especializada en Tecnología, Videojuegos, Música, Películas y Juguetes. Desde 1986 brindamos extrema diversión y experiencias inolvidables. Ofrecemos 13 locales en los mejores centros comerciales del país para estar cerca de nuestros amigos clientes.</p>
-<hr color="blue" size="15px">
-				
-				<h4>VISION</h4>
-				
-<p id="p2">Ser reconocido y cotizado como una empresa líder en proporcionar soluciones innovadoras de alta tecnología y alta calidad a clientes en Latino América y poder prindar la mejor experiencia y calidad de nuestra mercadería.
-			</p>
-			<hr color="green" size="15px">
-			<h4>MISION</h4>
-<p id="p3"> Proveer al cliente las mejores opciones de la tecnología más actualizada a precios competitivos sin olvidar el buen servicio y el buen trato de nuestros productos.</p>
-			</p>
-			<hr color="blue" size="15px">
-
-			<p> <h2><center>LOGOTIPO</center></h2>
-		  		<a href="https://elduendemall.com/"> <center><img src="IMAGENES/duende.jpg" width="15%"></center>
-		  	</a>
-			<hr color="green" size="15px">
-	</body>
+		USUARIO: Michael     Contraseña: Zacarias
+	<br>
+	<form action = "" name = "f1">
+		<p>Usuario: <input type="text" name="clave1" size="20"><br>
+		<p>Contraseña: <input type="password" name="clave3" size="20"><br>
+		<p>Reingresa la Contraseña: <input type="password" name="clave2" size="20"><br>
+		<p><input type="button" value="Ingresar" name="Comprobar si son Iguales" onclick="comprobarClave()" style="color:red; background-color:yellow;">
+		<p><input type=reset value="Borrar" name="Borrar Campos" style="color:black; background-color:silver;">
+	</form>
+</body>
 </html>
