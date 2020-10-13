@@ -1,0 +1,38 @@
+# EXAMENV-SECCION
+<html>
+<head>
+	<body bgcolor="FFCECB"> </body>
+<title>validacion de usuario y contraseÃ±a</title>
+<script>
+	function comprobarClave(){
+		clave1=document.f1.clave1.value
+		clave2=document.f1.clave2.value
+
+
+	if (clave1 == "Michael" && clave2 == "Zacarias"){
+			alert("los datos coinciden...\n Bienvenido");
+			var href="index.html";
+			window.location=href;
+		}
+		else{
+			alert("las dos claves son distintas...\n intentalo de nuevo.");
+			var href="dos.html";
+			window.location=href;
+		};
+	}
+</script>
+</head>
+<body>
+	<h1><center>Validacion de  usuario</center></h1>
+	<h3><center>usuario:Michael Zacarias</center></h3>
+	<br>Bienvenido, espero tengas un buen dia.
+	<br>
+	<form action="" name="f1">
+		Usuario: <input type="password" name="clave1" size="10">
+		<br>
+		password: <input type="password" name="clave2" size="10">
+		<br>
+		<input type="button" value="comprueba si los datos son correctos" onClick="comprobarClave()">
+		</form>
+</body>
+</html>
