@@ -1,14 +1,13 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Formulario de Registro SCIII</title>
-	<title>TIENDA</title>
-		<link rel="stylesheet" type="text/css" href="dcss/sol.css">
-</head>
-<body bgcolor="FFCECB"> </body>
-<div id="menu">
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Datos de clientes</title>
+		<link rel="stylesheet" type="text/css" href="dcss/estilo.css">
+		<link rel="stylesheet" type="text/css" href="dcss/sol2.css">
+	</head>
+	<body>
+		<div id="menu">
 		<ul>
 	<center><li> <a href="tres.html" class="greenlink">
 	INICIO </a>
@@ -22,34 +21,42 @@
 		<li><a href="pro.html" class="greenlink">
 		CONTACTO</a>
 		&nbsp;</center>	
-			<li> <a href="datos.html" class="greenlink">
+			<center><li> <a href="datos.html" class="greenlink">
 	INGRESA DATOS </a>
         &nbsp; 
 </ul>
 </ul>
 </div>
-
-		<hr></hr>
-	<body>
-
-<div class="group">
-	<form action="registro.php" method="POST">
-		 <h2><em>Formulario de Registro</em></h2>
-<label for="dpi">DPI<span><em>(requerido)</em></span></label>
-<input type="text" name="dpi" class="form-input" required/>
-<br>
-<label for="nombre">Nombre <span><em>(requerido)</em></span></label>
-<input type="text" name="nombre" class="form-input" required/>
-<br>
-<label for="apellido">Apellido <span><em>(requerido</em></span></label>
-	<input type="text" name="apellido" class="form-input" required/>
-	<br>
-	<label for="email">Sueldo <span><em>(requerido)</em></span></label>
-	<input type="text" name="sueldo" class="form-input"/>
-	<br>
-	<center> <input type="form-btn" name="submit" type="submit" value="Suscribirse"/></center>
-</p>
+<div class="form">
+	<form action="guardar.php" method="POST">
+		<p>Nombre</p>
+		<label for="nombre">Ingrese su nombre </label>
+		<br>
+		<input type="text" name="nombre" placeholder="Nombre" required>
+		<p>Apellido</p>
+		<label for="apellido">Ingrese Apellido </label>
+		<br>
+		<input type="text" name="apellido" placeholder="apellido" required>
+		<p>DPI</p>
+	    <label for="dpi">Ingrese su DPI </label>
+	    <br>
+		<input type="text" name="dpi" placeholder="dpi" required>
+		<p>Correo electronico</p>
+		<label for="correo">Ingrese su correo electronico </label>
+		<br>
+		<input type="email" name="correo" placeholder="alguien@algo.com" required>
+		<p>Sueldo</p>
+		<label for="sueldo">Ingrese su sueldo </label>
+		<br>
+		<input type="text" name="sueldo" placeholder="sueldo" required>
+	     <p>Comentario</p>
+	     <label for="comentario"> Ingrese algún comentario</label>
+	     <br>
+	     <textarea name="comentario" placeholder="Comentario"></textarea>
+	     <br>
+	     <br>
+	     <input type="submit" name="Enviar">
 	</form>
-</div>
-</body>
-</html>
+</div>	
+	</body>
+	</html>

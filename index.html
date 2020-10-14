@@ -3,6 +3,7 @@
 <html>
 <head>
 <title>Validar Contraseña</title>
+<link rel="stylesheet" type="text/css" href="dcss/estilo3.css">
 <script>
 	function comprobarClave(){
 		clave1 = document.f1.clave1.value
@@ -25,11 +26,19 @@
 
 		USUARIO: Michael     Contraseña: Zacarias
 	<br>
+<div class="form">
 	<form action = "" name = "f1">
-		<p>Usuario: <input type="text" name="clave1" size="20"><br>
-		<p>Contraseña: <input type="password" name="clave2" size="20"><br>
+		<p>Usuario: 
+        <label for="usuario"> Ingrese su usuario</label>
+        <br>
+			<input type="text" name="clave1" size="20">
+		<p>Contraseña:
+        <label for="contraseña"> Ingrese su contraseña</label>
+        <br>
+		 <input type="password" name="clave2" size="20">
 		<p><input type="button" value="Ingresar" name="Comprobar si son Iguales" onclick="comprobarClave()" style="color:blue; background-color:white;">
 		<p><input type=reset value="Borrar" name="Borrar Campos" style="color:purple; background-color:gray;">
 	</form>
+	</div>
 </body>
 </html>
